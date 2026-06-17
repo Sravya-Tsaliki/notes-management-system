@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+```
+<!-- Welcome Page -->
+<div id="welcomePage">
+
+    <h1>📝 Welcome to Notes Management System</h1>
+
+    <p>
+        Organize your study notes, personal reminders, and work tasks
+        efficiently using this Notes Management System.
+    </p>
+
+    <h2>✨ Features</h2>
+
+    <ul>
+        <li>✅ Add Notes</li>
+        <li>✅ Edit Notes</li>
+        <li>✅ Delete Notes</li>
+        <li>✅ Search Notes</li>
+        <li>✅ Categories (Study, Personal, Work)</li>
+        <li>✅ Description Text Colors</li>
+        <li>✅ Background Colors</li>
+        <li>✅ Pin Important Notes</li>
+        <li>✅ Dark Mode</li>
+        <li>✅ Date & Time Tracking</li>
+        <li>✅ Local Storage Support</li>
+        <li>✅ Mobile Responsive Design</li>
+    </ul>
+
+    <h2>📖 How To Use</h2>
+
+    <ol>
+        <li>Enter a Note Title.</li>
+        <li>Enter the Note Description.</li>
+        <li>Select a Category.</li>
+        <li>Select Description Text Color.</li>
+        <li>Select Note Background Color.</li>
+        <li>Click Add Note.</li>
+        <li>Use Search to find notes quickly.</li>
+        <li>Pin important notes to keep them at the top.</li>
+        <li>Use Dark Mode for comfortable viewing.</li>
+        <li>Your notes are automatically saved.</li>
+        <li>Refresh the page without losing your notes.</li>
+    </ol>
+
+    <h2>💾 Data Storage</h2>
+
+    <p>
+        This application uses browser Local Storage.
+        Notes are saved automatically and remain available even after
+        refreshing or reopening the browser.
+    </p>
+
+    <button onclick="openApp()">
+        Next ➜ Open Application
+    </button>
+
+</div>
+
+<!-- Main App -->
+<div class="container" id="appPage" style="display:none;">
+
+    <h1>📝 Notes Management System</h1>
+
+    <button class="dark-btn" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+
+    <input
+        type="text"
+        id="title"
+        placeholder="Enter Note Title"
+    >
+
+    <textarea
+        id="description"
+        placeholder="Enter Note Description"
+    ></textarea>
+
+    <select id="category">
+        <option value="Study">📚 Study</option>
+        <option value="Personal">👤 Personal</option>
+        <option value="Work">💼 Work</option>
+    </select>
+
+    <label><strong>Description Text Color:</strong></label>
+
+    <select id="textColor">
+        <option value="black">⚫ Black</option>
+        <option value="red">🔴 Red</option>
+        <option value="green">🟢 Green</option>
+        <option value="blue">🔵 Blue</option>
+    </select>
+
+    <label><strong>Background Color:</strong></label>
+
+    <input
+        type="color"
+        id="noteColor"
+        value="#ffffff"
+    >
+
+    <button onclick="addNote()">
+        Add Note
+    </button>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Notes..."
+        onkeyup="searchNotes()"
+    >
+
+    <div id="notesContainer"></div>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>

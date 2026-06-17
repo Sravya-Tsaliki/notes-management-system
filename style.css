@@ -1,0 +1,180 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+transition:0.3s;
+}
+
+/* Welcome Page */
+
+#welcomePage{
+width:80%;
+margin:40px auto;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+#welcomePage h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+#welcomePage h2{
+margin-top:20px;
+margin-bottom:10px;
+}
+
+#welcomePage p{
+line-height:1.6;
+margin-bottom:15px;
+}
+
+#welcomePage ul,
+#welcomePage ol{
+margin-left:30px;
+margin-bottom:20px;
+}
+
+#welcomePage li{
+margin-bottom:8px;
+}
+
+#welcomePage button{
+display:block;
+margin:20px auto;
+padding:12px 20px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+/* Main App */
+
+.container{
+width:80%;
+margin:auto;
+text-align:center;
+padding:20px;
+}
+
+h1{
+margin-bottom:20px;
+}
+
+input,
+textarea,
+select{
+width:80%;
+padding:10px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+button{
+padding:10px 15px;
+margin:5px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+background:#007bff;
+color:white;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.dark-btn{
+background:#222;
+}
+
+.note{
+padding:20px;
+margin:15px auto;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+width:80%;
+text-align:left;
+}
+
+.note h3{
+margin-bottom:10px;
+}
+
+.note p{
+margin-bottom:10px;
+}
+
+.note small{
+color:gray;
+}
+
+.note button{
+margin-right:5px;
+}
+
+/* Dark Mode */
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark input,
+.dark textarea,
+.dark select{
+background:#333;
+color:white;
+border:1px solid #666;
+}
+
+.dark #welcomePage{
+background:#1f1f1f;
+color:white;
+}
+
+.dark .note{
+color:black;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+```
+.container{
+    width:95%;
+}
+
+#welcomePage{
+    width:95%;
+}
+
+input,
+textarea,
+select{
+    width:95%;
+}
+
+.note{
+    width:95%;
+}
+```
+
+}
