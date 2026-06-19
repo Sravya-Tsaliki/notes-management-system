@@ -17,6 +17,9 @@ A Notes Management System built using HTML, CSS, and JavaScript.
 - HTML
 - CSS
 - JavaScript
+  
+##Live Demo
+https://sravya-tsaliki.github.io/notes-management-system/
 
 ## Author
 Sravya Tsaliki
